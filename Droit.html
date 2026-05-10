@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribution des droits</title>
+    <script src="controle.js"></script>
+
+</head>
+<body>
+
+    <form action="droit.php" method="POST" onsubmit="return verif2()">
+        <fieldset>
+            <legend>Attribution des droits d'accès à un document</legend>
+            
+            <p>
+                <label>Identifiant de l'utilisateur :</label>
+                <!-- L'attribut required rend la saisie obligatoire -->
+                <input type="text" name="idUtil" required>
+            </p>
+            
+            <p>
+                <label>Nom du document :</label>
+                <select name="idDoc">
+                    <option value="">Sélectionner un document</option>
+                    <!-- Les options seraient normalement générées par PHP -->
+                    <option value="DOC01">Rapport Annuel</option>
+                    <option value="DOC02">Cahier des Charges</option>
+                    <option value="DOC03">Notes de Réunion</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Droit(s) accordé(s) :</label>
+                <input type="checkbox" name="ecr" value="O" onclick="choix1()"> Ecriture
+                <input type="checkbox" name="lec" value="O" onclick="choix2()"> Lecture
+                <input type="checkbox" name="imp" value="O" onclick="choix3()"> Impression
+            </p>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Enregistrer">
+                <input type="reset" value="Annuler">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

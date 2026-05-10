@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout d'un utilisateur</title>
+    <script src="controle.js"></script>
+
+</head>
+<body>
+
+    <form action="ajout.php" method="POST" onsubmit="return verif1()">
+        <fieldset>
+            <legend>Ajout d'un utilisateur</legend>
+            
+            <p>
+                <label for="idUtil">Identifiant :</label>
+                <input type="text" id="idUtil" name="idUtil">
+            </p>
+            
+            <p>
+                <label for="nom">Nom et prénom :</label>
+                <input type="text" id="nom" name="nom">
+            </p>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Ajouter">
+                <input type="reset" value="Annuler">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

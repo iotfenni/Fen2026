@@ -1,0 +1,110 @@
+/* --- Structure Globale --- */
+* {
+    box-sizing: border-box; /* Empêche les débordements */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- En-tête --- */
+h1 {
+    position: relative;
+    left: 5%; 
+    width: 90%;
+    height: 60px;
+    padding-top: 15px; 
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 70px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    z-index: 10;
+}
+
+/* --- Mise en page --- */
+nav {
+    height: 450px;
+    position: fixed;
+    width: 25%;
+    padding: 10px;
+}
+
+section {
+    width: 70%;
+    height: 450px;
+    position: relative;
+    left: 28%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    clear: both;
+}
+
+/* --- Formulaires & Éléments --- */
+fieldset {
+    border: 2px dashed red !important;
+    width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+legend { 
+    font-weight: bold; 
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    margin: 10px 25px;
+}
+
+input[type="text"] { 
+    width: 180px;
+    padding: 5px;
+}
+
+div { 
+    display: block; 
+    margin-bottom: 5px;
+}
+
+#divbt, .btn { 
+    text-align: center; 
+}
+
+/* --- Liens --- */
+a { 
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 2px 2px 3px red;
+}
+
+a:active {
+    font-style: italic;
+}

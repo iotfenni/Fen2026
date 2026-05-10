@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage des droits</title>
+</head>
+<body>
+
+    <form action="affichage.php" method="POST">
+        <fieldset>
+            <legend>Les droits d'accès d'un document</legend>
+            <p>
+                <label>Nom du document :</label>
+                <select name="idDoc">
+                    <option value="">Sélectionner un document</option>
+                    <!-- Exemple d'options -->
+                    <option value="DOC01">Rapport Annuel</option>
+                    <option value="DOC02">Cahier des Charges</option>
+                    <option value="DOC03">Notes de Réunion</option>
+                </select>
+            </p>
+            <div style="text-align: center;">
+                <input type="submit" value="Afficher">
+                <input type="reset" value="Annuler">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
